@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Xml.Linq;
+
 namespace BasicBilling.Core.Entities
 {
 	public class ClientBill
@@ -7,6 +9,9 @@ namespace BasicBilling.Core.Entities
         public int ClientId { get; set; }
         public int BillId { get; set; }
         public BillStatus Status { get; set; }
+
+        public virtual Client? Client { get; set; }
+        public virtual Bill? Bill { get; set; }
     }
 
     public enum BillStatus

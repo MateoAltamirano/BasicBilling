@@ -10,13 +10,26 @@
     <None Remove="Data\" />
     <None Remove="Filters\" />
     <None Remove="Repositories\" />
+    <None Remove="SQLite" />
+    <None Remove="Microsoft.EntityFrameworkCore.Sqlite" />
+    <None Remove="Data\Configurations\" />
+    <None Remove="Microsoft.EntityFrameworkCore.Design" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Data\" />
     <Folder Include="Filters\" />
     <Folder Include="Repositories\" />
+    <Folder Include="Data\Configurations\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BasicBilling.Core\BasicBilling.Core.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="SQLite" Version="3.13.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
   </ItemGroup>
 </Project>

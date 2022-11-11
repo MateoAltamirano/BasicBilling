@@ -13,3 +13,5 @@
 /Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.Infrastructure/obj/Debug/net7.0/refint/BasicBilling.Infrastructure.dll
 /Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.Infrastructure/obj/Debug/net7.0/BasicBilling.Infrastructure.pdb
 /Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.Infrastructure/obj/Debug/net7.0/ref/BasicBilling.Infrastructure.dll
+/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.Infrastructure/bin/Debug/net7.0/BasicBilling.Infrastructure.runtimeconfig.json
+/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.Infrastructure/obj/Debug/net7.0/BasicBilling.Infrastructure.genruntimeconfig.cache
