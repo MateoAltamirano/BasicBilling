@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using BasicBilling.Core.Interfaces;
+using Microsoft.AspNetCore.Mvc;
 
 namespace BasicBilling.API.Controllers
 {
@@ -7,12 +8,18 @@ namespace BasicBilling.API.Controllers
     [Produces("application/json")]
     public class BillingController : ControllerBase
     {
+        private readonly IBillRepository _billRepository;
+        public BillingController(IBillRepository billRepository)
+        {
+            _billRepository = billRepository;
+        }
   
         [HttpGet("/search")]
         [ProducesResponseType(StatusCodes.Status200OK)]
-        public IActionResult GetHistoryByCategory()
+        public async Task<IActionResult> GetPaidBillsByCategory(string category)
         {
-            return Ok();
+            var bills = await _billRepository.GetPaidBillsByCategory(category);
+            return Ok(bills);
         }
 
         [HttpGet("/pending")]
