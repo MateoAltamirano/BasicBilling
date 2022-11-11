@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/BasicBilling.Core/BasicBilling.Core.csproj",
+      "projectUniqueName": "/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.Core/BasicBilling.Core.csproj",
       "projectName": "BasicBilling.Core",
-      "projectPath": "/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/BasicBilling.Core/BasicBilling.Core.csproj",
+      "projectPath": "/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.Core/BasicBilling.Core.csproj",
       "packagesPath": "/Users/mateoaltamirano/.nuget/packages/",
-      "outputPath": "/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/BasicBilling.Core/obj/",
+      "outputPath": "/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.Core/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/mateoaltamirano/.nuget/NuGet/NuGet.Config"

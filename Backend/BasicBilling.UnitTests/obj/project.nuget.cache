@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tPqDUm9sBjZrm1c+lpqwgvUOu/PMpE/D1M9wUuRgJeNe6NJSwsO1ulenS7iCS6Ggqc+qoQYQIyzsTa7DSluPug==",
+  "dgSpecHash": "pOP8ZlB44H50YwBeJSj1ydUD+t1YrpxV+toNgPg1U1XFpNg5G0dBT64X/A2roDlwYJJ0WsSxmwKFdaf/w02Eog==",
   "success": true,
-  "projectFilePath": "/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/BasicBilling.UnitTests/BasicBilling.UnitTests.csproj",
+  "projectFilePath": "/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.UnitTests/BasicBilling.UnitTests.csproj",
   "expectedPackageFiles": [
     "/Users/mateoaltamirano/.nuget/packages/coverlet.collector/3.1.2/coverlet.collector.3.1.2.nupkg.sha512",
     "/Users/mateoaltamirano/.nuget/packages/microsoft.codecoverage/17.3.2/microsoft.codecoverage.17.3.2.nupkg.sha512",

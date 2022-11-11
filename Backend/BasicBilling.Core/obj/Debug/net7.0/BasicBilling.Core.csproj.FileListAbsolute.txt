@@ -1,0 +1,12 @@
+/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.Core/bin/Debug/net7.0/BasicBilling.Core.deps.json
+/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.Core/bin/Debug/net7.0/BasicBilling.Core.dll
+/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.Core/bin/Debug/net7.0/BasicBilling.Core.pdb
+/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.Core/obj/Debug/net7.0/BasicBilling.Core.csproj.AssemblyReference.cache
+/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.Core/obj/Debug/net7.0/BasicBilling.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.Core/obj/Debug/net7.0/BasicBilling.Core.AssemblyInfoInputs.cache
+/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.Core/obj/Debug/net7.0/BasicBilling.Core.AssemblyInfo.cs
+/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.Core/obj/Debug/net7.0/BasicBilling.Core.csproj.CoreCompileInputs.cache
+/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.Core/obj/Debug/net7.0/BasicBilling.Core.dll
+/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.Core/obj/Debug/net7.0/refint/BasicBilling.Core.dll
+/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.Core/obj/Debug/net7.0/BasicBilling.Core.pdb
+/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.Core/obj/Debug/net7.0/ref/BasicBilling.Core.dll

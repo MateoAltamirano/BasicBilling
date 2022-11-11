@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/BasicBilling.UnitTests/BasicBilling.UnitTests.csproj": {}
+    "/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.UnitTests/BasicBilling.UnitTests.csproj": {}
   },
   "projects": {
-    "/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/BasicBilling.UnitTests/BasicBilling.UnitTests.csproj": {
+    "/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.UnitTests/BasicBilling.UnitTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/BasicBilling.UnitTests/BasicBilling.UnitTests.csproj",
+        "projectUniqueName": "/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.UnitTests/BasicBilling.UnitTests.csproj",
         "projectName": "BasicBilling.UnitTests",
-        "projectPath": "/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/BasicBilling.UnitTests/BasicBilling.UnitTests.csproj",
+        "projectPath": "/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.UnitTests/BasicBilling.UnitTests.csproj",
         "packagesPath": "/Users/mateoaltamirano/.nuget/packages/",
-        "outputPath": "/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/BasicBilling.UnitTests/obj/",
+        "outputPath": "/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.UnitTests/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/mateoaltamirano/.nuget/NuGet/NuGet.Config"

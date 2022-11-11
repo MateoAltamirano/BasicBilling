@@ -500,11 +500,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/BasicBilling.API/BasicBilling.API.csproj",
+      "projectUniqueName": "/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.API/BasicBilling.API.csproj",
       "projectName": "BasicBilling.API",
-      "projectPath": "/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/BasicBilling.API/BasicBilling.API.csproj",
+      "projectPath": "/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.API/BasicBilling.API.csproj",
       "packagesPath": "/Users/mateoaltamirano/.nuget/packages/",
-      "outputPath": "/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/BasicBilling.API/obj/",
+      "outputPath": "/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.API/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/mateoaltamirano/.nuget/NuGet/NuGet.Config"
@@ -519,11 +519,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/BasicBilling.Core/BasicBilling.Core.csproj": {
-              "projectPath": "/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/BasicBilling.Core/BasicBilling.Core.csproj"
+            "/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.Core/BasicBilling.Core.csproj": {
+              "projectPath": "/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.Core/BasicBilling.Core.csproj"
             },
-            "/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/BasicBilling.Infrastructure/BasicBilling.Infrastructure.csproj": {
-              "projectPath": "/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/BasicBilling.Infrastructure/BasicBilling.Infrastructure.csproj"
+            "/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.Infrastructure/BasicBilling.Infrastructure.csproj": {
+              "projectPath": "/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.Infrastructure/BasicBilling.Infrastructure.csproj"
             }
           }
         }

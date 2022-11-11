@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OCQBZozcXbP6Bt2GOFT/rYK8cUlUGM2yhvUxKTVyCGXssdTrjcAwlpTGFHqZNxQpJinCJyhVx4FdfdacnpZRaw==",
+  "dgSpecHash": "SnQaoWfDp9GtBKNM/EzDxLKn56DDPKBAudZp8mDKuSt1NVjGTxkmt09apdNqFfIW1zrNG2GbC2U1s9xTWmxfTw==",
   "success": true,
-  "projectFilePath": "/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/BasicBilling.Infrastructure/BasicBilling.Infrastructure.csproj",
+  "projectFilePath": "/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.Infrastructure/BasicBilling.Infrastructure.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

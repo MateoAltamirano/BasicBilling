@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gbpa6KOENav63S9o4S1XD9FvFo+HrdS1CNEIb8UMDboSyF+l8ZDt5gSIEKfUpiwc5qMk4GhvpWnmg0azVBCnmw==",
+  "dgSpecHash": "ZPRjUfUb3Pna1RSZX4HB9cJP+nuyDLyXnA5hqglpGqkD5jfLbsPoPG/iM7qkeXpRssITr6fh0lWj9oRHZ1dnmg==",
   "success": true,
-  "projectFilePath": "/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/BasicBilling.API/BasicBilling.API.csproj",
+  "projectFilePath": "/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.API/BasicBilling.API.csproj",
   "expectedPackageFiles": [
     "/Users/mateoaltamirano/.nuget/packages/microsoft.aspnetcore.openapi/7.0.0/microsoft.aspnetcore.openapi.7.0.0.nupkg.sha512",
     "/Users/mateoaltamirano/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
