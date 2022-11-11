@@ -1,0 +1,30 @@
+﻿<Properties StartupConfiguration="{313F1B0C-99F1-4007-85EB-AEC2572F93FB}|https">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.BasicBilling.Infrastructure FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.BasicBilling.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="../BasicBilling.UnitTests/UnitTest1.cs">
+    <Files>
+      <File FileName="../BasicBilling.Core/Class1.cs" />
+      <File FileName="../BasicBilling.Infrastructure/Class1.cs" />
+      <File FileName="../BasicBilling.UnitTests/UnitTest1.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="BasicBilling.API" expanded="True">
+            <Node name="BasicBilling.API" expanded="True" />
+            <Node name="BasicBilling.Core" expanded="True" />
+            <Node name="BasicBilling.Infrastructure" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.BasicBilling.Core FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.Tests.BasicBilling.UnitTests FirstBuild="True" />
+</Properties>
