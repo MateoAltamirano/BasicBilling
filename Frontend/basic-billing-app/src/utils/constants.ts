@@ -5,3 +5,9 @@ export const enum SECTION {
   PendingBills = 'Pending Bills',
   PayBill = 'Pay Bill',
 }
+
+export enum CATEGORY {
+  Sewer = 'SEWER',
+  Water = 'WATER',
+  Electricity = 'ELECTRICITY',
+}

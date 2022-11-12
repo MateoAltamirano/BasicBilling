@@ -1,5 +1,5 @@
 import { Flex, Tabs } from '@chakra-ui/react';
-import Content from './components/content';
+import Content from './components/Content';
 import Navbar from './components/navbar/Navbar';
 
 const App = () => {
