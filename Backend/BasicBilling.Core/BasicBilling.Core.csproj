@@ -11,11 +11,13 @@
     <None Remove="DTOs\" />
     <None Remove="Exceptions\" />
     <None Remove="Interfaces\" />
+    <None Remove="Responses\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Entities\" />
     <Folder Include="DTOs\" />
     <Folder Include="Exceptions\" />
     <Folder Include="Interfaces\" />
+    <Folder Include="Responses\" />
   </ItemGroup>
 </Project>

@@ -14,14 +14,14 @@ namespace BasicBilling.Infrastructure.Data.Configurations
             builder.HasKey(c => c.Id);
 
             builder
-                .Property(c => c.Id)
-                .HasColumnName("id");
+            .Property(c => c.Id)
+            .HasColumnName("id");
 
             builder
-                .Property(c => c.Name)
-                .IsRequired()
-                .HasMaxLength(100)
-                .HasColumnName("name");
+            .Property(c => c.Name)
+            .IsRequired()
+            .HasMaxLength(100)
+            .HasColumnName("name");
         }
     }
 }

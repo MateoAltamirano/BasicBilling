@@ -14,30 +14,30 @@ namespace BasicBilling.Infrastructure.Data.Configurations
             builder.HasKey(c => c.Id);
 
             builder
-                .Property(c => c.Id)
-                .HasColumnName("id");
+            .Property(c => c.Id)
+            .HasColumnName("id");
 
             builder
-                .Property(c => c.Status)
-                .HasDefaultValue(BillStatus.Pending)
-                .HasColumnName("status")
-                .HasConversion<string>();
+            .Property(c => c.Status)
+            .HasDefaultValue(BillStatus.Pending)
+            .HasColumnName("status")
+            .HasConversion<string>();
 
             builder
-                .HasOne(c => c.Client)
-                .WithMany(c => c.Bills)
-                .HasForeignKey(c => c.ClientId)
-                .OnDelete(DeleteBehavior.Cascade)
-                .HasConstraintName("FK_ClientBill_Client");
+            .HasOne(c => c.Client)
+            .WithMany(c => c.Bills)
+            .HasForeignKey(c => c.ClientId)
+            .OnDelete(DeleteBehavior.Cascade)
+            .HasConstraintName("FK_ClientBill_Client");
 
             builder.Property(c => c.ClientId).HasColumnName("clientId");
 
             builder
-                .HasOne(c => c.Bill)
-                .WithMany(c => c.ClientBills)
-                .HasForeignKey(c => c.BillId)
-                .OnDelete(DeleteBehavior.Cascade)
-                .HasConstraintName("FK_ClientBill_Bill");
+            .HasOne(c => c.Bill)
+            .WithMany(c => c.ClientBills)
+            .HasForeignKey(c => c.BillId)
+            .OnDelete(DeleteBehavior.Cascade)
+            .HasConstraintName("FK_ClientBill_Bill");
 
             builder.Property(c => c.BillId).HasColumnName("billId");
         }

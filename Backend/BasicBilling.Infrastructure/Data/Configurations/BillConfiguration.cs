@@ -14,19 +14,19 @@ namespace BasicBilling.Infrastructure.Data.Configurations
             builder.HasKey(b => b.Id);
 
             builder
-                .Property(b => b.Id)
-                .HasColumnName("id");
+            .Property(b => b.Id)
+            .HasColumnName("id");
 
             builder
-                .Property(b => b.Category)
-                .IsRequired()
-                .HasMaxLength(100)
-                .HasColumnName("category");
+            .Property(b => b.Category)
+            .IsRequired()
+            .HasMaxLength(100)
+            .HasColumnName("category");
 
             builder
-                .Property(b => b.Period)
-                .IsRequired()
-                .HasColumnName("period");
+            .Property(b => b.Period)
+            .IsRequired()
+            .HasColumnName("period");
         }
     }
 }

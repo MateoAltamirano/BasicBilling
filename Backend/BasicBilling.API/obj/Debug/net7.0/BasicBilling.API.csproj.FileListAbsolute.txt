@@ -107,3 +107,8 @@
 /Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.API/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Design.dll
 /Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.API/bin/Debug/net7.0/Mono.TextTemplating.dll
 /Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.API/bin/Debug/net7.0/System.CodeDom.dll
+/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.API/bin/Debug/net7.0/AutoMapper.dll
+/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.API/bin/Debug/net7.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.API/bin/Debug/net7.0/FluentValidation.dll
+/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.API/bin/Debug/net7.0/FluentValidation.AspNetCore.dll
+/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.API/bin/Debug/net7.0/FluentValidation.DependencyInjectionExtensions.dll
