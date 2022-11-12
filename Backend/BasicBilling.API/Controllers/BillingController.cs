@@ -56,7 +56,7 @@ namespace BasicBilling.API.Controllers
             var createBillResponse = _mapper.Map<CreateBillDTO>(bill);
             var response = new APIResponse<CreateBillDTO>(createBillResponse, null);
 
-            return Created(string.Empty, response);
+            return Ok(response);
         }
 
         [HttpPost]
@@ -70,7 +70,7 @@ namespace BasicBilling.API.Controllers
             var createClientBillResponse = _mapper.Map<ClientBillDTO>(clientBill);
             var response = new APIResponse<ClientBillDTO>(createClientBillResponse, null);
 
-            return Created(string.Empty, response);
+            return Ok(response);
         }
 
         [HttpPost]
