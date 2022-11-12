@@ -16,25 +16,25 @@ namespace BasicBilling.Infrastructure.Repositories
 
 		public async Task<IEnumerable<ClientBill>> GetPaidBillsByCategory(string category)
 		{
-			var bills = await _context.ClientBill.Where(bill => bill.Bill!.Category == category).ToListAsync();
-			return bills;
+			var clientBills = await _context.ClientBill.Where(bill => bill.Bill!.Category == category).ToListAsync();
+			return clientBills;
 		}
 
         public async Task<IEnumerable<ClientBill>> GetPendingBillsByClientID(int clientID)
         {
-            var bills = await _context.ClientBill.Where(bill => bill.ClientId == clientID).ToListAsync();
-            return bills;
+            var clientBills = await _context.ClientBill.Where(bill => bill.ClientId == clientID).ToListAsync();
+            return clientBills;
         }
 		
         public async Task<ClientBill?> UpdateBillStatusToPaid(int clientBillID)
         {
-            var bill = await _context.ClientBill.FirstAsync(bill => bill.Id == clientBillID);
-			if (bill != null)
+            var clientBill = await _context.ClientBill.FirstAsync(clientBill => clientBill.Id == clientBillID);
+			if (clientBill != null)
 			{
-				bill.Status = BillStatus.Paid;
+                clientBill.Status = BillStatus.Paid;
 				await _context.SaveChangesAsync();
 			}
-			return bill;
+			return clientBill;
         }
 
 		public async Task CreateBill(Bill bill)
@@ -47,12 +47,6 @@ namespace BasicBilling.Infrastructure.Repositories
 		{
 			await _context.ClientBill.AddAsync(clientBill);
 			await _context.SaveChangesAsync();
-		}
-
-		public async Task<Bill?> GetBillByID(int billID)
-		{
-			var bill = await _context.Bill.FirstAsync(bill => bill.Id == billID);
-			return bill;
 		}
     }
 }

@@ -1,29 +1,68 @@
 ﻿<Properties StartupConfiguration="{313F1B0C-99F1-4007-85EB-AEC2572F93FB}|https">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.BasicBilling.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="../BasicBilling.UnitTests/UnitTest1.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../BasicBilling.Core/Services/BillService.cs">
     <Files>
-      <File FileName="../BasicBilling.Core/Class1.cs" />
-      <File FileName="../BasicBilling.Infrastructure/Class1.cs" />
-      <File FileName="../BasicBilling.UnitTests/UnitTest1.cs" Line="1" Column="1" />
+      <File FileName="../BasicBilling.Infrastructure/Data/BasicBillingContext.cs" Line="10" Column="9" />
+      <File FileName="appsettings.json" Line="2" Column="1" />
+      <File FileName="Program.cs" Line="24" Column="43" />
+      <File FileName="appsettings.Development.json" Line="4" Column="5" />
+      <File FileName="../BasicBilling.Infrastructure/Data/Configurations/BillConfiguration.cs" Line="27" Column="13" />
+      <File FileName="../BasicBilling.Infrastructure/Data/Configurations/ClientBillConfiguration.cs" Line="17" Column="13" />
+      <File FileName="../BasicBilling.Core/Entities/Client.cs" Line="1" Column="1" />
+      <File FileName="../BasicBilling.Infrastructure/Data/Configurations/ClientConfiguration.cs" Line="24" Column="13" />
+      <File FileName="../BasicBilling.Core/Entities/Bill.cs" Line="12" Column="1" />
+      <File FileName="../BasicBilling.Infrastructure/Repositories/BillRepository.cs" Line="50" Column="4" />
+      <File FileName="Controllers/BillingController.cs" Line="61" Column="1" />
+      <File FileName="../BasicBilling.Core/Interfaces/IBillRepository.cs" Line="12" Column="6" />
+      <File FileName="../BasicBilling.Core/Entities/ClientBill.cs" Line="17" Column="1" />
+      <File FileName="../BasicBilling.Core/DTOs/BillDTO.cs" Line="4" Column="15" />
+      <File FileName="../BasicBilling.Infrastructure/Mappings/AutoMapperProfile.cs" Line="12" Column="13" />
+      <File FileName="../BasicBilling.Infrastructure/Filters/ValidationFilter.cs" Line="18" Column="36" />
+      <File FileName="../BasicBilling.Core/Responses/ErrorResponse.cs" Line="13" Column="53" />
+      <File FileName="../BasicBilling.Core/Exceptions/BasicBillingException.cs" Line="20" Column="6" />
+      <File FileName="../BasicBilling.Core/Exceptions/BasicBillingExceptionMessages.cs" Line="6" Column="57" />
+      <File FileName="../BasicBilling.Infrastructure/Validators/BillValidator.cs" Line="7" Column="51" />
+      <File FileName="../BasicBilling.Core/Responses/APIResponse.cs" Line="6" Column="24" />
+      <File FileName="../BasicBilling.Core/Interfaces/IBillService.cs" Line="10" Column="14" />
+      <File FileName="../BasicBilling.Core/Services/BillService.cs" Line="39" Column="24" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="BasicBilling.API" expanded="True">
-            <Node name="Tests" expanded="True">
-              <Node name="BasicBilling.UnitTests" expanded="True" />
+            <Node name="BasicBilling.API" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="appsettings.json" expanded="True" />
             </Node>
-            <Node name="BasicBilling.API" expanded="True" />
-            <Node name="BasicBilling.Core" expanded="True" />
-            <Node name="BasicBilling.Infrastructure" expanded="True" />
+            <Node name="BasicBilling.Core" expanded="True">
+              <Node name="DTOs" expanded="True" />
+              <Node name="Entities" expanded="True" />
+              <Node name="Exceptions" expanded="True" />
+              <Node name="Interfaces" expanded="True" />
+              <Node name="Responses" expanded="True" />
+              <Node name="Services" expanded="True">
+                <Node name="BillService.cs" selected="True" />
+              </Node>
+            </Node>
+            <Node name="BasicBilling.Infrastructure" expanded="True">
+              <Node name="Data" expanded="True">
+                <Node name="Configurations" expanded="True" />
+              </Node>
+              <Node name="Filters" expanded="True" />
+              <Node name="Mappings" expanded="True" />
+              <Node name="Repositories" expanded="True" />
+              <Node name="Validators" expanded="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.Tests.BasicBilling.UnitTests FirstBuild="True" />
 </Properties>

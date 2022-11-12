@@ -1,4 +1,5 @@
 using BasicBilling.Core.Interfaces;
+using BasicBilling.Core.Services;
 using BasicBilling.Infrastructure.Data;
 using BasicBilling.Infrastructure.Filters;
 using BasicBilling.Infrastructure.Repositories;
@@ -13,13 +14,17 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services
-.AddControllers()
+.AddControllers(options =>
+{
+    options.Filters.Add<ExceptionFilter>();
+})
 .ConfigureApiBehaviorOptions(options =>
 {
     options.SuppressModelStateInvalidFilter = true;
 }); ;
 builder.Services.AddDbContext<BasicBillingContext>(options =>
         options.UseSqlite(builder.Configuration.GetConnectionString("BasicBillingDatabase")));
+builder.Services.AddTransient<IBillService, BillService>();
 builder.Services.AddTransient<IBillRepository, BillRepository>();
 builder.Services.AddMvc(options =>
 {
@@ -42,6 +47,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseRouting();
 
 app.UseAuthorization();
 

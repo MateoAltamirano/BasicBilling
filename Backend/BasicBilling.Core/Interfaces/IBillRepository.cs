@@ -9,7 +9,6 @@ namespace BasicBilling.Core.Interfaces
 		Task<ClientBill?> UpdateBillStatusToPaid(int clientBillID);
 		Task CreateBill(Bill bill);
 		Task CreateClientBill(ClientBill clientBill);
-		Task<Bill?> GetBillByID(int billID);
     }
 }
 

@@ -11,6 +11,12 @@ namespace BasicBilling.Infrastructure.Mappings
 		{
 			CreateMap<Bill, BillDTO>();
 			CreateMap<BillDTO, Bill>();
+			CreateMap<ClientBill, AssignBillDTO>();
+			CreateMap<AssignBillDTO, ClientBill>();
+			CreateMap<Bill, CreateBillDTO>();
+			CreateMap<CreateBillDTO, Bill>();
+			CreateMap<ClientBill, CreateClientBillDTO>();
+            CreateMap<CreateClientBillDTO, ClientBill>();
         }
 	}
 }
