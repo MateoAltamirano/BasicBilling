@@ -42,10 +42,10 @@ namespace BasicBilling.Core.Services
             }
         }
 
-        public Task<ClientBill> PayBill(int clientBillID)
+        public async Task<ClientBill> PayBill(int clientBillID)
         {
-            var clientBill = _billRepository.UpdateBillStatusToPaid(clientBillID);
-            if (clientBill != null)
+            var clientBill = await _billRepository.UpdateBillStatusToPaid(clientBillID);
+            if (clientBill == null)
             {
                 throw new BasicBillingException(string.Format(BasicBillingExceptionMessages.NotFound, "Bill"), BasicBillingExceptionType.NotFound);
             }
@@ -53,15 +53,15 @@ namespace BasicBilling.Core.Services
             return clientBill!;
         }
 
-        public Task<IEnumerable<ClientBill>> GetPaymentsHistoryByCategory(string category)
+        public async Task<IEnumerable<ClientBill>> GetPaymentsHistoryByCategory(string category)
         {
-            var clientBills = _billRepository.GetPaidBillsByCategory(category);
+            var clientBills = await _billRepository.GetPaidBillsByCategory(category);
             return clientBills;
         }
 
-        public Task<IEnumerable<ClientBill>> GetPendingBillsFromClient(int clientID)
+        public async Task<IEnumerable<ClientBill>> GetPendingBillsFromClient(int clientID)
         {
-            var clientBills = _billRepository.GetPendingBillsByClientID(clientID);
+            var clientBills = await _billRepository.GetPendingBillsByClientID(clientID);
             return clientBills;
         }
     }

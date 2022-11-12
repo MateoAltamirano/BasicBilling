@@ -22,13 +22,13 @@ namespace BasicBilling.Infrastructure.Repositories
 
         public async Task<IEnumerable<ClientBill>> GetPendingBillsByClientID(int clientID)
         {
-            var clientBills = await _context.ClientBill.Where(bill => bill.ClientId == clientID).ToListAsync();
+            var clientBills = await _context.ClientBill.Where(bill => bill.ClientId == clientID && bill.Status == BillStatus.Pending).ToListAsync();
             return clientBills;
         }
 		
         public async Task<ClientBill?> UpdateBillStatusToPaid(int clientBillID)
         {
-            var clientBill = await _context.ClientBill.FirstAsync(clientBill => clientBill.Id == clientBillID);
+            var clientBill = await _context.ClientBill.SingleOrDefaultAsync(clientBill => clientBill.Id == clientBillID);
 			if (clientBill != null)
 			{
                 clientBill.Status = BillStatus.Paid;

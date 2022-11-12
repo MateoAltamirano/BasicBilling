@@ -13,6 +13,7 @@
     <None Remove="Interfaces\" />
     <None Remove="Responses\" />
     <None Remove="Services\" />
+    <None Remove="Microsoft.AspNetCore.Mvc.NewtonsoftJson" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Entities\" />

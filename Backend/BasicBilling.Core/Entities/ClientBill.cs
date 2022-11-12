@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text.Json.Serialization;
 using System.Xml.Linq;
 
 namespace BasicBilling.Core.Entities
@@ -14,6 +15,7 @@ namespace BasicBilling.Core.Entities
         public virtual Bill? Bill { get; set; }
     }
 
+    [JsonConverter(typeof(JsonStringEnumConverter))]
     public enum BillStatus
     {
         Pending,

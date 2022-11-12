@@ -27,7 +27,8 @@ namespace BasicBilling.API.Controllers
         public async Task<IActionResult> GetPaymentsHistoryByCategory(string category)
         {
             var clientBills = await _billService.GetPaymentsHistoryByCategory(category);
-            var response = new APIResponse<IEnumerable<ClientBill>>(clientBills, null);
+            var clientBillsResponse = clientBills.Select(clientBill => _mapper.Map<ClientBillDTO>(clientBill));
+            var response = new APIResponse<IEnumerable<ClientBillDTO>>(clientBillsResponse, null);
 
             return Ok(response);
         }
@@ -38,7 +39,8 @@ namespace BasicBilling.API.Controllers
         public async Task<IActionResult> GetPendingBillsFromClient([FromQuery]int clientID)
         {
             var clientBills = await _billService.GetPendingBillsFromClient(clientID);
-            var response = new APIResponse<IEnumerable<ClientBill>>(clientBills, null);
+            var clientBillsResponse = clientBills.Select(clientBill => _mapper.Map<ClientBillDTO>(clientBill));
+            var response = new APIResponse<IEnumerable<ClientBillDTO>>(clientBillsResponse, null);
 
             return Ok(response);
         }
@@ -65,8 +67,8 @@ namespace BasicBilling.API.Controllers
         {
             var clientBill = _mapper.Map<ClientBill>(assignBillDTO);
             await _billService.AssignBill(clientBill);
-            var createClientBillResponse = _mapper.Map<CreateClientBillDTO>(clientBill);
-            var response = new APIResponse<CreateClientBillDTO>(createClientBillResponse, null);
+            var createClientBillResponse = _mapper.Map<ClientBillDTO>(clientBill);
+            var response = new APIResponse<ClientBillDTO>(createClientBillResponse, null);
 
             return Created(string.Empty, response);
         }
@@ -78,7 +80,8 @@ namespace BasicBilling.API.Controllers
         public async Task<IActionResult> PayBill(int clientBillID)
         {
             var clientBill = await _billService.PayBill(clientBillID);
-            var response = new APIResponse<ClientBill>(clientBill, null);
+            var clientBillResponse = _mapper.Map<ClientBillDTO>(clientBill);
+            var response = new APIResponse<ClientBillDTO>(clientBillResponse, null);
 
             return Ok(response);
         }
