@@ -16,7 +16,7 @@ namespace BasicBilling.Infrastructure.Repositories
 
 		public async Task<IEnumerable<ClientBill>> GetPaidBillsByCategory(string category)
 		{
-			var clientBills = await _context.ClientBill.Where(bill => bill.Bill!.Category == category).ToListAsync();
+			var clientBills = await _context.ClientBill.Where(bill => bill.Bill!.Category == category && bill.Status == BillStatus.Paid).ToListAsync();
 			return clientBills;
 		}
 

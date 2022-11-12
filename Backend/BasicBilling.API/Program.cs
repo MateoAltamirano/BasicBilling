@@ -30,6 +30,14 @@ builder.Services.AddMvc(options =>
 {
     options.Filters.Add<ValidationFilter>();
 });
+builder.Services.AddCors(options => {
+    options.AddDefaultPolicy(options => {
+        options
+        .WithOrigins(builder.Configuration["BasicBillingAppURL"]!)
+        .AllowAnyHeader()
+        .AllowAnyMethod();
+    });
+});
 builder.Services.AddFluentValidationAutoValidation().AddFluentValidationClientsideAdapters();
 builder.Services.AddValidatorsFromAssemblies(AppDomain.CurrentDomain.GetAssemblies().Where(a => !a.IsDynamic));
 
@@ -49,6 +57,8 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseRouting();
+
+app.UseCors();
 
 app.UseAuthorization();
 
