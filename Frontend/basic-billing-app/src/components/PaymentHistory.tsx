@@ -3,6 +3,7 @@ import { CATEGORY } from '../utils/constants';
 import { useBasicBillingStore } from '../utils/useBasicBillingStore';
 import { FiInbox } from 'react-icons/fi';
 import ClientBillCard from './ClientBillCard';
+import EmptyList from './EmptyList';
 
 const PaymentHistory = () => {
   const billsByCategory = useBasicBillingStore(
@@ -44,18 +45,7 @@ const PaymentHistory = () => {
           <ClientBillCard key={bill.id} id={bill.id} status={bill.status} />
         ))
       ) : (
-        <Flex
-          flexDir={'column'}
-          h={'100%'}
-          w={'100%'}
-          justifyContent={'center'}
-          alignItems={'center'}
-        >
-          <FiInbox size={'10rem'} color={'#CBD5E0'} />
-          <Text fontSize={'1.5rem'} color={'#CBD5E0'}>
-            {'Choose a category'}
-          </Text>
-        </Flex>
+        <EmptyList message={'Choose a category'} />
       )}
     </Flex>
   );

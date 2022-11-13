@@ -12,6 +12,7 @@ import { FiSearch } from 'react-icons/fi';
 import { useBasicBillingStore } from '../utils/useBasicBillingStore';
 import ClientBillCard from './ClientBillCard';
 import { FiInbox, FiCreditCard } from 'react-icons/fi';
+import EmptyList from './EmptyList';
 
 const PendingBills = () => {
   const [clientID, setClientID] = useState<string>('');
@@ -85,18 +86,7 @@ const PendingBills = () => {
           </Flex>
         ))
       ) : (
-        <Flex
-          flexDir={'column'}
-          h={'100%'}
-          w={'100%'}
-          justifyContent={'center'}
-          alignItems={'center'}
-        >
-          <FiInbox size={'10rem'} color={'#CBD5E0'} />
-          <Text fontSize={'1.5rem'} color={'#CBD5E0'}>
-            {'No pending bills found'}
-          </Text>
-        </Flex>
+        <EmptyList message={'No pending bills found'} />
       )}
     </Flex>
   );
