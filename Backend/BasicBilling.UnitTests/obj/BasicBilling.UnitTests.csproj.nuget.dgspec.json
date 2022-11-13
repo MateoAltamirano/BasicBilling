@@ -4,14 +4,97 @@
     "/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.UnitTests/BasicBilling.UnitTests.csproj": {}
   },
   "projects": {
-    "/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.UnitTests/BasicBilling.UnitTests.csproj": {
+    "/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.API/BasicBilling.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.UnitTests/BasicBilling.UnitTests.csproj",
-        "projectName": "BasicBilling.UnitTests",
-        "projectPath": "/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.UnitTests/BasicBilling.UnitTests.csproj",
+        "projectUniqueName": "/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.API/BasicBilling.API.csproj",
+        "projectName": "BasicBilling.API",
+        "projectPath": "/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.API/BasicBilling.API.csproj",
         "packagesPath": "/Users/mateoaltamirano/.nuget/packages/",
-        "outputPath": "/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.UnitTests/obj/",
+        "outputPath": "/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.API/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/mateoaltamirano/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.Core/BasicBilling.Core.csproj": {
+                "projectPath": "/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.Core/BasicBilling.Core.csproj"
+              },
+              "/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.Infrastructure/BasicBilling.Infrastructure.csproj": {
+                "projectPath": "/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.Infrastructure/BasicBilling.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.Core/BasicBilling.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.Core/BasicBilling.Core.csproj",
+        "projectName": "BasicBilling.Core",
+        "projectPath": "/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.Core/BasicBilling.Core.csproj",
+        "packagesPath": "/Users/mateoaltamirano/.nuget/packages/",
+        "outputPath": "/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/mateoaltamirano/.nuget/NuGet/NuGet.Config"
@@ -37,10 +120,156 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.Infrastructure/BasicBilling.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.Infrastructure/BasicBilling.Infrastructure.csproj",
+        "projectName": "BasicBilling.Infrastructure",
+        "projectPath": "/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.Infrastructure/BasicBilling.Infrastructure.csproj",
+        "packagesPath": "/Users/mateoaltamirano/.nuget/packages/",
+        "outputPath": "/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/mateoaltamirano/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.Core/BasicBilling.Core.csproj": {
+                "projectPath": "/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.Core/BasicBilling.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.2.2, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "SQLite": {
+              "target": "Package",
+              "version": "[3.13.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.UnitTests/BasicBilling.UnitTests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.UnitTests/BasicBilling.UnitTests.csproj",
+        "projectName": "BasicBilling.UnitTests",
+        "projectPath": "/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.UnitTests/BasicBilling.UnitTests.csproj",
+        "packagesPath": "/Users/mateoaltamirano/.nuget/packages/",
+        "outputPath": "/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.UnitTests/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/mateoaltamirano/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.API/BasicBilling.API.csproj": {
+                "projectPath": "/Users/mateoaltamirano/Documents/Software Engineering/Projects/Nexion/Backend/BasicBilling.API/BasicBilling.API.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
           "dependencies": {
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[17.3.2, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.18.2, )"
             },
             "coverlet.collector": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
