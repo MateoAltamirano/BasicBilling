@@ -52,7 +52,7 @@ const PendingBills = () => {
   };
 
   return (
-    <Flex h={'100%'} w={'100%'} flexDir={'column'} overflow={'auto'}>
+    <Flex h={'100%'} w={'30rem'} flexDir={'column'} overflow={'auto'}>
       <FormControl mb={'0.5rem'}>
         <FormLabel>{'Enter the client ID please:'}</FormLabel>
         <Input
@@ -72,12 +72,13 @@ const PendingBills = () => {
       </Button>
       {pendingBillsFromClient.length > 0 ? (
         pendingBillsFromClient.map((bill) => (
-          <Flex key={bill.id} alignItems={'center'} m={'0.5rem 0'}>
+          <Flex key={bill.id} alignItems={'center'}>
             <ClientBillCard key={bill.id} id={bill.id} status={bill.status} />
             <Button
-              h={'100%'}
               ml={'1rem'}
+              h={'4rem'}
               colorScheme={'whatsapp'}
+              bgColor={'green.400'}
               leftIcon={<FiCreditCard size={'1.25rem'} />}
               onClick={() => handleBillPayment(bill.id.toString())}
             >

@@ -29,7 +29,7 @@ const PaymentHistory = () => {
   };
 
   return (
-    <Flex h={'100%'} w={'100%'} flexDir={'column'} overflow={'auto'}>
+    <Flex h={'100%'} w={'30rem'} flexDir={'column'} overflow={'auto'}>
       <Select
         placeholder={'Select category'}
         onChange={({ target }) => handleCategoryChange(target.value)}

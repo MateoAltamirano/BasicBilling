@@ -7,10 +7,20 @@ const Content = () => {
     <Flex h={'100%'} p={'1.5rem'} w={'100%'}>
       <Flex h={'100%'} w={'100%'}>
         <TabPanels display={'flex'}>
-          <TabPanel p={'0'} w={'100%'}>
+          <TabPanel
+            p={'0'}
+            w={'100%'}
+            justifyContent={'center'}
+            display={'flex'}
+          >
             <PaymentHistory />
           </TabPanel>
-          <TabPanel p={'0'} w={'100%'}>
+          <TabPanel
+            p={'0'}
+            w={'100%'}
+            justifyContent={'center'}
+            display={'flex'}
+          >
             <PendingBills />
           </TabPanel>
         </TabPanels>
