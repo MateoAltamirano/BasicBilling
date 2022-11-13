@@ -1,7 +1,6 @@
 import { Flex, Select, Text, useToast } from '@chakra-ui/react';
 import { CATEGORY } from '../utils/constants';
 import { useBasicBillingStore } from '../utils/useBasicBillingStore';
-import { FiInbox } from 'react-icons/fi';
 import ClientBillCard from './ClientBillCard';
 import EmptyList from './EmptyList';
 

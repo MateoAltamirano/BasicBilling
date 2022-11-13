@@ -5,13 +5,12 @@ import {
   FormLabel,
   Input,
   useToast,
-  Text,
 } from '@chakra-ui/react';
 import { useState } from 'react';
 import { FiSearch } from 'react-icons/fi';
 import { useBasicBillingStore } from '../utils/useBasicBillingStore';
 import ClientBillCard from './ClientBillCard';
-import { FiInbox, FiCreditCard } from 'react-icons/fi';
+import { FiCreditCard } from 'react-icons/fi';
 import EmptyList from './EmptyList';
 
 const PendingBills = () => {
